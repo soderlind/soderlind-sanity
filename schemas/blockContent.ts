@@ -63,5 +63,21 @@ export default defineType({
       type: 'image',
       options: {hotspot: true},
     }),
+    defineArrayMember({
+      type: 'code',
+      //   name: 'myCodeField',
+      title: 'Code',
+      options: {
+        language: 'typescript',
+        languageAlternatives: [
+          {title: 'Javascript', value: 'javascript'},
+          {title: 'Typescript', value: 'typescript'},
+          {title: 'PHP', value: 'php'},
+          {title: 'HTML', value: 'html'},
+          {title: 'CSS', value: 'css'},
+        ],
+        withFilename: false,
+      },
+    }),
   ],
 })
